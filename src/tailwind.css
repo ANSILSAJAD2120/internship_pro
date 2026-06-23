@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: #7c3aed;
+  }
+  body { @apply bg-white text-slate-700 font-sans; }
+}
+
+@layer components {
+  .btn-primary { @apply inline-flex items-center gap-3 bg-gradient-to-r from-primary-500 to-[#3b82f6] text-white font-semibold px-4 py-2 rounded-xl shadow-md transition-transform transform hover:-translate-y-1; }
+  .glass { @apply bg-white/5 border border-white backdrop-blur-md; }
+}
