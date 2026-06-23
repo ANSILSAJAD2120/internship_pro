@@ -1,27 +1,25 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router";
 
-import Home from "./pages/Home";
-import Counter from "./pages/Counter";
-import About from "./pages/About";
+import Home from "../pages/home/Home";
+import counter from "../pages/counter/counter";
+import About from "../pages/about/About";
+import App from "../App";
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/counter",
-    element: <Counter />,
-  },
-]);
-
-export default router;
-
+  
+  
+  
+    
+      {
+        path: "home",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "counter",
+        element: <counter />,
+      },
+    ],
